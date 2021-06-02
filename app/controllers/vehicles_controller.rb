@@ -4,9 +4,9 @@ class VehiclesController < ApplicationController
   # GET /vehicles or /vehicles.json
   def index
     @vehicles = if params[:search_by_key]
-      Vehicle.search_by_key(params[:search_by_key])
+      Vehicle.search_by_key(params[:search_by_key]).order("created_at DESC")
     else
-      Vehicle.all
+      Vehicle.all.order("created_at DESC")
     end
   end
 

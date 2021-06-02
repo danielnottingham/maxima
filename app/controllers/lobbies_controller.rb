@@ -4,9 +4,9 @@ class LobbiesController < ApplicationController
   # GET /lobbies or /lobbies.json
   def index
     @lobbies = if params[:search_by_key]
-      Lobby.search_by_key(params[:search_by_key])
+      Lobby.search_by_key(params[:search_by_key]).order("created_at DESC")
     else
-      Lobby.all
+      Lobby.order("created_at DESC")
     end
   end
 
