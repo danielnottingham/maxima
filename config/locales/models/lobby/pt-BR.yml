@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      lobby: Portaria
+    attributes:
+      lobby:
+        name: Nome
+        document: Documento
+        company: Empresa
+        board: Placa
+        entry: Entrada
+        exit: Saída
+        obs: Observação 

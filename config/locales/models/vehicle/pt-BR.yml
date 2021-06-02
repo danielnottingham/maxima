@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      vehicle: Controle de Veículos
+    attributes:
+      vehicle:
+        driver: Motorista
+        board: Placa
+        entry: Entrada
+        exit: Saída
+        obs: Observação 
