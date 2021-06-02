@@ -1,2 +1,5 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<main class="container">
+<% name = current_user.present? ? current_user.email : 'Visitante! Faça seu Login para continuar.' %>
+<h2>Bem vindo, <%= name %> </h2>
+</main>
