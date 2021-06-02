@@ -3,7 +3,11 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles or /vehicles.json
   def index
-    @vehicles = Vehicle.all
+    @vehicles = if params[:search_by_key]
+      Vehicle.search_by_key(params[:search_by_key])
+    else
+      Vehicle.all
+    end
   end
 
   # GET /vehicles/1 or /vehicles/1.json

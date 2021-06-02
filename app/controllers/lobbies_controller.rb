@@ -3,7 +3,11 @@ class LobbiesController < ApplicationController
 
   # GET /lobbies or /lobbies.json
   def index
-    @lobbies = Lobby.all
+    @lobbies = if params[:search_by_key]
+      Lobby.search_by_key(params[:search_by_key])
+    else
+      Lobby.all
+    end
   end
 
   # GET /lobbies/1 or /lobbies/1.json
