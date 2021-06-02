@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lobby.name %>
+</p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @lobby.document %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @lobby.company %>
+</p>
+
+<p>
+  <strong>Board:</strong>
+  <%= @lobby.board %>
+</p>
+
+<p>
+  <strong>Entry:</strong>
+  <%= @lobby.entry %>
+</p>
+
+<p>
+  <strong>Exit:</strong>
+  <%= @lobby.exit %>
+</p>
+
+<p>
+  <strong>Obs:</strong>
+  <%= @lobby.obs %>
+</p>
+
+<%= link_to 'Edit', edit_lobby_path(@lobby) %> |
+<%= link_to 'Back', lobbies_path %>

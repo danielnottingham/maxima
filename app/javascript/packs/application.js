@@ -10,6 +10,7 @@ import "channels"
 
 import 'bootstrap'
 import './src/application.scss'
+import {} from 'jquery-ujs'
 
 Rails.start()
 Turbolinks.start()

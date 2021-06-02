@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  document: MyString
+  company: MyString
+  board: MyString
+  entry: 2021-06-02 09:13:40
+  exit: 2021-06-02 09:13:40
+  obs: MyText
+
+two:
+  name: MyString
+  document: MyString
+  company: MyString
+  board: MyString
+  entry: 2021-06-02 09:13:40
+  exit: 2021-06-02 09:13:40
+  obs: MyText

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Driver:</strong>
+  <%= @vehicle.driver %>
+</p>
+
+<p>
+  <strong>Board:</strong>
+  <%= @vehicle.board %>
+</p>
+
+<p>
+  <strong>Entry:</strong>
+  <%= @vehicle.entry %>
+</p>
+
+<p>
+  <strong>Exit:</strong>
+  <%= @vehicle.exit %>
+</p>
+
+<p>
+  <strong>Obs:</strong>
+  <%= @vehicle.obs %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

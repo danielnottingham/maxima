@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  driver: MyString
+  board: MyString
+  entry: 2021-06-02 09:17:19
+  exit: 2021-06-02 09:17:19
+  obs: MyText
+
+two:
+  driver: MyString
+  board: MyString
+  entry: 2021-06-02 09:17:19
+  exit: 2021-06-02 09:17:19
+  obs: MyText
