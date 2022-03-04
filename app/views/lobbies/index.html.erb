@@ -1,9 +1,12 @@
-<p id="notice"><%= notice %></p>
-<%= form_tag(lobbies_path, :method => :get, class: "form-inline my-2 my-lg-0") do %>
-<p>
-  <%= text_field_tag :search_by_key, params[:search_by_key] , class: "form-control mr-sm-2", placeholder: 'Digite sua pesquisa'%>
-  <%= submit_tag 'Buscar', class: "btn btn-outline-success my-2 my-sm-0" %>
-</p>
+
+
+<%= search_form_for @q do |f| %>
+  <%= f.label :entry_gteq, "Data Inicial:" %>
+      <%= f.date_field :entry_gteq%>
+      <%= f.label :entry_lteq_any, "Data Final:" %>
+      <%= f.date_field :entry_lteq%>
+          
+      <%= f.submit %>
 <% end %>
 
 <h1>Controle da Portaria</h1>
@@ -45,6 +48,6 @@
     <% end %>
   </tbody>
 </table>
-
+<%= paginate @lobbies %>
 <br>
 

@@ -3,11 +3,14 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles or /vehicles.json
   def index
-    @vehicles = if params[:search_by_key]
-      Vehicle.search_by_key(params[:search_by_key]).order("created_at DESC")
-    else
-      Vehicle.all.order("created_at DESC")
-    end
+    #@vehicles = if params[:search_by_key]
+    #  Vehicle.search_by_key(params[:search_by_key]).order("created_at DESC")
+    #else
+    #  Vehicle.all.page(params[:page]).per(15).order("created_at DESC")
+    #end
+    @q = Vehicle.ransack(params[:q])
+    @vehicles = @q.result(distinct: true)
+    @vehicles = @vehicles.order('entry DESC').page(params[:page]).per(15)
   end
 
   # GET /vehicles/1 or /vehicles/1.json

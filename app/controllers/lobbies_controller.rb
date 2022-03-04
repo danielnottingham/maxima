@@ -3,13 +3,22 @@ class LobbiesController < ApplicationController
 
   # GET /lobbies or /lobbies.json
   def index
-    @lobbies = if params[:search_by_key]
-      Lobby.search_by_key(params[:search_by_key]).order("created_at DESC")
-    else
-      Lobby.order("created_at DESC")
-    end
-  end
+  #  @q = Lobby.ransack(params[:q])
+  #  @lobbies = @q.result
+  #  @lobbies = Lobby.order('created_at DESC').page(params[:page]).per(2)
+  #novo teste  data TO_CHAR(posts.created_at, 'YYYY-mm-dd')
+  
+  @q = Lobby.ransack(params[:q])
+  @lobbies = @q.result(distinct: true)
+  @lobbies = @lobbies.order('entry DESC').page(params[:page]).per(15)
 
+  #oiginal usando o form_tag
+    # @lobbies = if params[:search_by_key]
+   #   Lobby.search_by_key(params[:search_by_key]).order("created_at DESC")
+   # else
+   #   Lobby.page(params[:page]).per(15).order("created_at DESC")
+   # end
+  end
   # GET /lobbies/1 or /lobbies/1.json
   def show
   end

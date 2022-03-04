@@ -4,14 +4,25 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :driver %>
-    <%= f.input :board %>
-    <%= f.input :entry %>
-    <%= f.input :exit %>
-    <%= f.input :obs %>
+    <%= f.label :Motorista %> 
+    <%= f.text_field :driver , size:50 %>
+    <p>  
+    <p>  
+    <%= f.label :Placas %> 
+    <%= f.text_field :board %>
+    <p>
+    <%= f.label :Entrada %>  
+    <%= f.datetime_field :entry %>
+    <%= f.label :Saída %>  
+    <%= f.datetime_field :exit %>
+    <p>
+    <%= f.label :Observações %>  
+    <%= f.text_field :obs , size:50 %>
+
   </div>
 
   <div class="form-actions">
     <%= f.button :submit, class: 'btn btn-primary' %>
   </div>
-<% end %>
+  <p>
+  <% end %>

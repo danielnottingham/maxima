@@ -4,16 +4,30 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :document %>
-    <%= f.input :company %>
-    <%= f.input :board %>
-    <%= f.input :entry %>
-    <%= f.input :exit %>
-    <%= f.input :obs %>
+    <%= f.label :Nome %>  
+    <%= f.text_field :name , size:50 %>
+    <p>
+    <p>
+    <%= f.label :Documento %>  
+    <%= f.text_field :document , size:20 %>
+    <p>
+    <%= f.label :Empresa %>  
+    <%= f.text_field :company , size:50 %>
+    <p>
+    <%= f.label :Placa %>  
+    <%= f.text_field :board , size:10 %>
+    <%= f.label :Entrada %>  
+    <%= f.datetime_field :entry %>
+    <%= f.label :Saída %>  
+    <%= f.datetime_field :exit %>
+    <p>
+    <%= f.label :Observações %>  
+    <%= f.text_field :obs , size:50 %>
   </div>
+  <p>
 
   <div class="form-actions">
     <%= f.button :submit, class: 'btn btn-primary' %>
   </div>
 <% end %>
+<p>
