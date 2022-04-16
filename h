@@ -1,0 +1,60 @@
+[33mcommit ea4a96e2e1067be6e0c207fa1ee9500b57fac587[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: “Marcos <marcos.caliope@gmail.com>
+Date:   Fri Mar 4 16:35:16 2022 -0300
+
+    x
+    ajuste nos formularios veiculos e portaria ransack
+
+[33mcommit e32ad84c56080fee8c2a0ab8bb27229de421e937[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: “Marcos <marcos.caliope@gmail.com>
+Date:   Wed Feb 16 15:05:39 2022 -0300
+
+    Botao para novo formulario adicionado antes da tabela
+
+[33mcommit 47459166b3aa0415ba777f8361b6a4379a237562[m
+Author: Daniel Nottingham <danielnottingham.ti@gmail.com>
+Date:   Wed Jun 2 14:21:05 2021 -0300
+
+    order by created at desc and changes defaults themes
+
+[33mcommit 6c2deff73af7b7df88c57b14665040249f83a6a8[m
+Author: Daniel Nottingham <danielnottingham.ti@gmail.com>
+Date:   Wed Jun 2 10:41:44 2021 -0300
+
+    fix boostrap
+
+[33mcommit 407c868982957adfbd0243200250dd030d539e8f[m
+Author: Daniel Nottingham <danielnottingham.ti@gmail.com>
+Date:   Wed Jun 2 10:04:01 2021 -0300
+
+    pdf prawn and search by name
+
+[33mcommit 3f41b114af4d84e429d8a9a886daa05f86254a5c[m
+Author: Daniel Nottingham <danielnottingham.ti@gmail.com>
+Date:   Wed Jun 2 09:51:10 2021 -0300
+
+    locales and add bootstrap in tables
+
+[33mcommit 62b804756b7c7444581802ef9a12c7516f09c4ac[m
+Author: Daniel Nottingham <danielnottingham.ti@gmail.com>
+Date:   Wed Jun 2 09:32:42 2021 -0300
+
+    scaffold to vehicle and lobby
+
+[33mcommit 6282f51adf3f64703ccdd5c09d6f375aca3094f0[m
+Author: Daniel Nottingham <danielnottingham.ti@gmail.com>
+Date:   Wed Jun 2 09:11:57 2021 -0300
+
+    bootstrap and navbar
+
+[33mcommit fc6738499f4802b0c871f88a3e3a6aa7da77026d[m
+Author: Daniel Nottingham <danielnottingham.ti@gmail.com>
+Date:   Wed Jun 2 08:38:43 2021 -0300
+
+    setting devise
+
+[33mcommit 4c45c17a635be44f83cc96f22a9b75c9dffb5c1e[m
+Author: Daniel Nottingham <danielnottingham.ti@gmail.com>
+Date:   Wed Jun 2 08:29:43 2021 -0300
+
+    init project

@@ -38,7 +38,7 @@
         <td><%= vehicle.obs %></td>
         <td><%= link_to 'Exibir', vehicle, class: 'btn btn-primary' %></td>
         <td><%= link_to 'Editar', edit_vehicle_path(vehicle), class: 'btn btn-primary' %></td>
-        <td><%= link_to 'Deletar', vehicle, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <td><%= button_to 'Deletar', vehicle, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>

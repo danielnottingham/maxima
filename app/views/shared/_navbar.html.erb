@@ -1,29 +1,30 @@
-<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-      <%= link_to 'MÁXIMA', root_path, class: "navbar-brand" %>
-      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to 'Início', root_path, class: 'nav-link btn btn-dark' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Controle Veículos', vehicles_path, class: 'nav-link btn btn-dark' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Controle Portaria', lobbies_path, class: 'nav-link btn btn-dark' %>
-          </li>
-          <li class="nav-item">
-            <%= button_to 'Sair', destroy_user_session_path, method: :delete, class: 'nav-link btn btn-dark' %>
-          </li>
-          <% else %>
-          <li class="nav-item">
-            <%= link_to 'Entrar', new_user_session_path, class: 'nav-link btn btn-dark' %>
-          </li>
-          <% end %>
-        </ul>
-      </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= link_to 'MÁXIMA', root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to 'Início', root_path, class: 'nav-link btn btn-dark' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Controle Veículos', vehicles_path, class: 'nav-link btn btn-dark' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Controle Portaria', lobbies_path, class: 'nav-link btn btn-dark' %>
+        </li>
+        <li class="nav-item">
+          <%= button_to 'Sair', destroy_user_session_path, method: :delete, class: 'nav-link btn btn-dark' %>
+        </li>
+        <% else %>
+        <li class="nav-item">
+          <%= link_to 'Entrar', new_user_session_path, class: 'nav-link btn btn-dark' %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
